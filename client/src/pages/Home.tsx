@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { ProjectCard } from "@/components/ui/project-card";
 import { ExpandableSection } from "@/components/ui/expandable-section";
-import { ArrowDown, Instagram, Linkedin, Twitter } from "lucide-react";
+import { ArrowDown, Instagram, Linkedin, Twitter, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import profileImg from "@assets/IMG_0283_1767509196887.jpeg";
 
@@ -284,6 +284,9 @@ export default function Home() {
                 will@willsmercer.com
               </a>
               <div className="flex gap-6">
+                <a href="mailto:will@willsmercer.com" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
+                  <Mail className="w-5 h-5" />
+                </a>
                 <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
                   <Linkedin className="w-5 h-5" />
                 </a>
