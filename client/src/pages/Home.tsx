@@ -66,6 +66,35 @@ export default function Home() {
           </motion.button>
         </section>
 
+        {/* Philosophy & Approach */}
+        <Section className="border-t border-white/10">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div className="md:col-span-4">
+              <h2 className="text-sm font-mono text-white/40 uppercase tracking-widest">Philosophy</h2>
+            </div>
+            <div className="md:col-span-8 space-y-12">
+              <p className="text-2xl md:text-3xl font-display font-light leading-snug text-white/90">
+                Will spends his time thinking about how we can make <span className="text-white">perfect physical and digital environments</span> that help people connect with their purpose and flourish.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-white/5">
+                <div>
+                  <h3 className="text-white font-display mb-3">Accelerator Programs</h3>
+                  <p className="text-white/60 leading-relaxed">
+                    When not working on a bilateral basis, Will runs accelerator programs and gatherings for top tier founders, fostering environments for radical growth.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-white font-display mb-3">Strategic Thematics</h3>
+                  <p className="text-white/60 leading-relaxed">
+                    His work converges at the intersection of Web3, physical spaces, creative collaboration, and social impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Section>
+
         {/* Expandable Content Sections */}
         <div id="work">
           <ExpandableSection title="Current Projects" subtitle="Active Engagements & Ventures">
@@ -225,7 +254,13 @@ export default function Home() {
         <footer id="contact" className="py-24 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
             <div>
-              <h2 className="text-4xl md:text-5xl font-display font-medium mb-8">Let's connect.</h2>
+              <h2 className="text-4xl md:text-5xl font-display font-medium mb-4">Let's connect.</h2>
+              <a 
+                href="mailto:will@willsmercer.com" 
+                className="text-xl md:text-2xl text-white/60 hover:text-white transition-colors block mb-8 font-light"
+              >
+                will@willsmercer.com
+              </a>
               <div className="flex gap-6">
                 <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
                   <Linkedin className="w-5 h-5" />
