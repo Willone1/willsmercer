@@ -143,6 +143,7 @@ export default function Home() {
               title="Heph Technologies"
               year="2024"
               location="Global"
+              href="https://heph.ai"
               description="Co-founded a commercial AI data labelling and model-training platform spun out of Human Protocol. Success stats: Built a $3m LOI pipeline across 7 pilots and opened a funding round that was 50%+ committed within weeks."
               stats={["$3m LOI pipeline", "7 pilots"]}
             />
@@ -151,6 +152,7 @@ export default function Home() {
               year="2021–2024"
               role="Head of Strategy"
               location="Global, Cayman Islands"
+              href="https://hmt.ai"
               description="Head of Strategy at a Web3 protocol for the tokenisation of work and decentralised task coordination. Success stats: Supported a network distributing 2.7bn tasks to 174k+ workers with 26m on-chain transactions and deployed $1m+ in ecosystem grants."
               stats={["2.7bn tasks", "174k+ workers", "26m on-chain tx"]}
             />
@@ -159,6 +161,7 @@ export default function Home() {
               year="2019–2024"
               role="Chief Mentor"
               location="Kyiv, Ukraine"
+              href="https://eo.in.ua"
               description="Chief Mentor and advisor for Ukraine’s leading startup incubator. Success stats: Advised over 120 startups, created over $200m in portfolio value."
               stats={["120+ startups advised", "$200m portfolio value"]}
             />
@@ -167,6 +170,7 @@ export default function Home() {
               year="2021–2022"
               role="Founder"
               location="Belize → Global"
+              href="https://noma-collective.com"
               description="Founded a digital nomad and co-living platform starting from a beachfront co-living space in Belize. Success stats: Scaled into the world’s largest global digital nomad travel company, with revenues doubling annually and operations across 30+ cities worldwide."
               stats={["World's largest nomad travel co", "30+ cities"]}
             />
