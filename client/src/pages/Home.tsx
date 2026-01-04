@@ -1,6 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { ProjectCard } from "@/components/ui/project-card";
-import { ArrowDown, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { ExpandableSection } from "@/components/ui/expandable-section";
+import { ArrowDown, Instagram, Linkedin, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light leading-[1.1] mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light leading-[1.1] mb-8 text-balance">
               Will is an early-stage venture strategist who partners with <span className="text-white/50">elite founders</span> to build companies with global scale and impact.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12">
@@ -65,10 +66,9 @@ export default function Home() {
           </motion.button>
         </section>
 
-        {/* Current Projects */}
+        {/* Expandable Content Sections */}
         <div id="work">
-          <Section className="border-t border-white/10">
-            <h2 className="text-sm font-mono text-white/40 uppercase tracking-widest mb-12">Current Projects</h2>
+          <ExpandableSection title="Current Projects" subtitle="Active Engagements & Ventures">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <ProjectCard 
                 title="WorldBuild"
@@ -112,12 +112,10 @@ export default function Home() {
                 <p className="text-white/60 text-sm">Pro Bono • London</p>
               </div>
             </div>
-          </Section>
+          </ExpandableSection>
         </div>
 
-        {/* Past Projects */}
-        <Section className="border-t border-white/10">
-          <h2 className="text-sm font-mono text-white/40 uppercase tracking-widest mb-12">Past Projects</h2>
+        <ExpandableSection title="Past Projects" subtitle="Archive of Previous Ventures & Consultancy" defaultOpen={false}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ProjectCard 
               title="Heph Technologies"
@@ -200,29 +198,27 @@ export default function Home() {
               Co-founded neighbourhood cultural venue.
             </div>
           </div>
-        </Section>
+        </ExpandableSection>
 
-        {/* Bio Section */}
         <div id="about">
-          <Section className="border-t border-white/10 grid grid-cols-1 md:grid-cols-12 gap-12">
-            <div className="md:col-span-4">
-              <h2 className="text-sm font-mono text-white/40 uppercase tracking-widest sticky top-32">Biography</h2>
+          <ExpandableSection title="Biography" subtitle="Background & Experience" defaultOpen={false}>
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+              <div className="md:col-span-12 text-lg text-white/80 space-y-8 leading-relaxed font-light">
+                <p>
+                  Will is a venture strategist, serial founder, investor, and adviser to early-stage businesses. He partners with elite founders to build companies with global scale and impact, specialising in the intersection of commercial strategy, narrative-driven storytelling, and ecosystem design.
+                </p>
+                <p>
+                  Currently, Will is director at WorldBuild Labs, a venture studio that assembles top developer and founder talent to rapidly ideate, prototype, and launch breakthrough applications for the World ecosystem.
+                </p>
+                <p>
+                  Prior to this, Will founded Noma Collective, the world’s largest global digital nomad travel company, growing it from a 60-room co-living space in Belize to a global platform. As Venture Director at Zag, he deployed early-stage capital into 9 companies and helped shape narratives that led to 8× portfolio value growth.
+                </p>
+                <p>
+                  Will began his career at Lloyds Bank during the global financial crisis, working on complex business turnarounds. He holds a Master’s degree in Physics from the University of Reading and is a guest lecturer on the Creative MBA at ESCP Europe.
+                </p>
+              </div>
             </div>
-            <div className="md:col-span-8 text-lg text-white/80 space-y-8 leading-relaxed font-light">
-              <p>
-                Will is a venture strategist, serial founder, investor, and adviser to early-stage businesses. He partners with elite founders to build companies with global scale and impact, specialising in the intersection of commercial strategy, narrative-driven storytelling, and ecosystem design.
-              </p>
-              <p>
-                Currently, Will is director at WorldBuild Labs, a venture studio that assembles top developer and founder talent to rapidly ideate, prototype, and launch breakthrough applications for the World ecosystem.
-              </p>
-              <p>
-                Prior to this, Will founded Noma Collective, the world’s largest global digital nomad travel company, growing it from a 60-room co-living space in Belize to a global platform. As Venture Director at Zag, he deployed early-stage capital into 9 companies and helped shape narratives that led to 8× portfolio value growth.
-              </p>
-              <p>
-                Will began his career at Lloyds Bank during the global financial crisis, working on complex business turnarounds. He holds a Master’s degree in Physics from the University of Reading and is a guest lecturer on the Creative MBA at ESCP Europe.
-              </p>
-            </div>
-          </Section>
+          </ExpandableSection>
         </div>
 
         {/* Footer / Contact */}
