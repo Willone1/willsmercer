@@ -134,17 +134,6 @@ export default function Home() {
                 ]}
               />
             </div>
-
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 border border-white/5 rounded-lg bg-white/5">
-                <h3 className="text-lg font-display mb-2">Hermanas</h3>
-                <p className="text-white/60 text-sm">Pro Bono • Global</p>
-              </div>
-              <div className="p-6 border border-white/5 rounded-lg bg-white/5">
-                <h3 className="text-lg font-display mb-2">Mamma Wellbeing</h3>
-                <p className="text-white/60 text-sm">Pro Bono • London</p>
-              </div>
-            </div>
           </ExpandableSection>
         </div>
 
@@ -154,7 +143,7 @@ export default function Home() {
               title="Heph Technologies"
               year="2024"
               location="Global"
-              description="Co-founded a commercial AI data labelling and model-training platform spun out of Human Protocol. Built a $3m LOI pipeline across 7 pilots and opened a funding round that was 50%+ committed within weeks."
+              description="Co-founded a commercial AI data labelling and model-training platform spun out of Human Protocol. Success stats: Built a $3m LOI pipeline across 7 pilots and opened a funding round that was 50%+ committed within weeks."
               stats={["$3m LOI pipeline", "7 pilots"]}
             />
             <ProjectCard 
@@ -162,7 +151,7 @@ export default function Home() {
               year="2021–2024"
               role="Head of Strategy"
               location="Global, Cayman Islands"
-              description="Head of Strategy at a Web3 protocol for the tokenisation of work and decentralised task coordination. Supported a network distributing 2.7bn tasks to 174k+ workers with 26m on-chain transactions."
+              description="Head of Strategy at a Web3 protocol for the tokenisation of work and decentralised task coordination. Success stats: Supported a network distributing 2.7bn tasks to 174k+ workers with 26m on-chain transactions and deployed $1m+ in ecosystem grants."
               stats={["2.7bn tasks", "174k+ workers", "26m on-chain tx"]}
             />
             <ProjectCard 
@@ -170,7 +159,7 @@ export default function Home() {
               year="2019–2024"
               role="Chief Mentor"
               location="Kyiv, Ukraine"
-              description="Chief Mentor and advisor for Ukraine’s leading startup incubator. Advised over 120 startups, created over $200m in portfolio value."
+              description="Chief Mentor and advisor for Ukraine’s leading startup incubator. Success stats: Advised over 120 startups, created over $200m in portfolio value."
               stats={["120+ startups advised", "$200m portfolio value"]}
             />
             <ProjectCard 
@@ -178,7 +167,7 @@ export default function Home() {
               year="2021–2022"
               role="Founder"
               location="Belize → Global"
-              description="Founded a digital nomad and co-living platform starting from a beachfront co-living space in Belize. Scaled into the world’s largest global digital nomad travel company."
+              description="Founded a digital nomad and co-living platform starting from a beachfront co-living space in Belize. Success stats: Scaled into the world’s largest global digital nomad travel company, with revenues doubling annually and operations across 30+ cities worldwide."
               stats={["World's largest nomad travel co", "30+ cities"]}
             />
             <ProjectCard 
@@ -186,7 +175,7 @@ export default function Home() {
               year="2018–2021"
               role="Venture Director"
               location="London"
-              description="Venture Director at the early-stage investment arm of global creative agency BBH. Deployed ~$3m across 9 startups, analysed 400+ pitches, worked with 200+ founders."
+              description="Venture Director at the early-stage investment arm of global creative agency BBH. Success stats: Deployed ~$3m across 9 startups, analysed 400+ pitches, worked with 200+ founders in 25+ countries, and helped build a portfolio achieving up to 8× value growth."
               stats={["$3m deployed", "8× value growth", "200+ founders"]}
             />
             <ProjectCard 
@@ -194,42 +183,46 @@ export default function Home() {
               year="2017–Present"
               role="Founder"
               location="Global"
-              description="Founded a startup ecosystem consultancy advising governments, investors, and venture builders on entrepreneurship and impact. Advised USAID on a $50m national entrepreneurship strategy."
+              description="Founded a startup ecosystem consultancy advising governments, investors, and venture builders on entrepreneurship and impact. Success stats: Advised USAID on a $50m national entrepreneurship strategy, supported programmes in 20+ countries, and contributed strategy for a 64,000 km² district in Shanghai."
               stats={["$50m USAID strategy", "20+ countries"]}
             />
-          </div>
-          
-          <div className="mt-8 pt-8 border-t border-dashed border-white/10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm text-white/60">
-            <div>
-              <strong className="block text-white mb-1">Château de la Salle</strong>
-              <span className="block text-xs mb-2">2017–2019 • Burgundy, France</span>
-              Founded a residential work and event space on a historic château estate focused on creative collaboration and deep work. Hosted 170+ guests.
-            </div>
-            <div>
-              <strong className="block text-white mb-1">The Trampery</strong>
-              <span className="block text-xs mb-2">2015–2017 • London</span>
-              Head of Strategy at a leading coworking and incubator platform. Scaled to 5 workspaces, grew occupancy from 60% to 95%, secured £2.3m in EU funding.
-            </div>
-            <div>
-              <strong className="block text-white mb-1">IAAM Adoption</strong>
-              <span className="block text-xs mb-2">2014–2015 • UK</span>
-              Operated an adoption charity funded via a pioneering Social Impact Bond. Contributed to one of the UK’s early large-scale outcomes-based social finance models.
-            </div>
-            <div>
-              <strong className="block text-white mb-1">Lloyds Banking Group</strong>
-              <span className="block text-xs mb-2">2009–2013 • UK</span>
-              Worked on complex business turnarounds and restructuring projects during the global financial crisis. Restructured corporates with £1.5bn+ debt exposure.
-            </div>
-            <div>
-              <strong className="block text-white mb-1">Independent Events</strong>
-              <span className="block text-xs mb-2">2009–2020 • UK & Europe</span>
-              Curated and produced independent music, cultural, and community-led events bringing together artists, founders, and creative technologists.
-            </div>
-            <div>
-              <strong className="block text-white mb-1">Bar Iguana</strong>
-              <span className="block text-xs mb-2">2016–2018 • Reading, UK</span>
-              Co-founded and operated a neighbourhood bar and cultural venue serving as a hub for music, art, and local community events.
-            </div>
+            <ProjectCard 
+              title="Château de la Salle"
+              year="2017–2019"
+              location="Burgundy, France"
+              description="Founded a residential work and event space on a historic château estate focused on creative collaboration and deep work. Success stats: Hosted 170+ guests, curated multiple international events, built a 1,400-person mailing list, and converted 600 sqm into accommodation."
+            />
+            <ProjectCard 
+              title="The Trampery"
+              year="2015–2017"
+              role="Head of Strategy"
+              location="London"
+              description="Head of Strategy at a leading coworking and incubator platform supporting early-stage startups and creative businesses. Success stats: Scaled to 5 workspaces, supported 200+ startups, grew occupancy from 60% to 95%, launched 5 incubator programmes, and secured £2.3m in EU funding."
+            />
+            <ProjectCard 
+              title="IAAM Adoption"
+              year="2014–2015"
+              location="United Kingdom"
+              description="Operated an adoption charity funded via a pioneering Social Impact Bond, overseeing operations, governance, and reporting. Success stats: Contributed to one of the UK’s early large-scale outcomes-based social finance models."
+            />
+            <ProjectCard 
+              title="Lloyds Banking Group"
+              year="2009–2013"
+              location="United Kingdom"
+              description="Worked on complex business turnarounds and restructuring projects during the global financial crisis. Success stats: Delivered multi-million-pound change programmes, restructured corporates with £1.5bn+ debt exposure, and led a £4.4m transformation project."
+            />
+            <ProjectCard 
+              title="Music & Cultural Events"
+              year="2009–2020"
+              location="UK & Europe"
+              description="Curated and produced independent music, cultural, and community-led events bringing together artists, founders, and creative technologists. Success stats: Delivered dozens of sold-out events, built repeat audiences across cities, and contributed to the early growth of multiple creative communities."
+            />
+            <ProjectCard 
+              title="Bar Iguana"
+              year="2016–2018"
+              location="Reading, UK"
+              description="Co-founded and operated a neighbourhood bar and cultural venue serving as a hub for music, art, and local community events. Success stats: Established a profitable hospitality venue with a strong local following, regular live music and DJ programming."
+            />
           </div>
         </ExpandableSection>
 
