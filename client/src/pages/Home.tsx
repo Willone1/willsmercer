@@ -264,7 +264,7 @@ export default function Home() {
                     From 2014-2017 Will was Head of Strategy at The Trampery, where he helped scale one of London’s leading coworking spaces into a back bone of London’s startup community. He oversaw a portfolio of 5 workspaces supporting 200+ startups, launched 5 sector-focused incubator programmes, and helped secure £2.3m in EU funding.
                   </p>
                   <p>
-                    Will began his career at Lloyds Bank during the global financial crisis, working on complex business turnarounds and restructuring projects across multinational and regional businesses. He holds a Master’s degree in Physics from the University of Reading and a diploma in Finance and Organisational Management from the London Institute of Banking and Finance. Will is a guest lecturer on the Creative MBA at ESCP Europe, hosts a show on Soho Radio, and loves playing volleyball.
+                    Will began his career at Lloyds Bank during the global financial crisis, working on complex business turnarounds and restructuring projects across multinational and regional businesses. He holds a Master’s degree in Physics from the University of Reading and a diploma in Finance and Organisational Management from the London Institute of Banking and Finance. Will is a guest lecturer on the Creative MBA at ESCP Europe, hosts a show on Soho Radio, loves playing beach volleyball and climbing anything made of rock.
                   </p>
                 </div>
               </div>
