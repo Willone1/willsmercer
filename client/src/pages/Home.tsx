@@ -179,6 +179,7 @@ export default function Home() {
               year="2018–2021"
               role="Venture Director"
               location="London"
+              href="https://wearezag.com"
               description="Venture Director at the early-stage investment arm of global creative agency BBH. Success stats: Deployed ~$3m across 9 startups, analysed 400+ pitches, worked with 200+ founders in 25+ countries, and helped build a portfolio achieving up to 8× value growth."
               stats={["$3m deployed", "8× value growth", "200+ founders"]}
             />
