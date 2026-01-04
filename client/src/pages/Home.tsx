@@ -3,7 +3,7 @@ import { ProjectCard } from "@/components/ui/project-card";
 import { ExpandableSection } from "@/components/ui/expandable-section";
 import { ArrowDown, Instagram, Linkedin, Twitter } from "lucide-react";
 import { motion } from "framer-motion";
-import profileImg from "@assets/stock_images/portrait_of_professi_0f56662a.jpg";
+import profileImg from "@assets/IMG_0283_1767509196887.jpeg";
 
 export default function Home() {
   const scrollToContent = () => {
@@ -103,6 +103,7 @@ export default function Home() {
               <ProjectCard 
                 title="WorldBuild"
                 location="Global"
+                href="https://worldbuildlabs.com"
                 description="An accelerator program for World’s 33m users. 30 teams supported, $15m funding raised and 600k daily active users across the first two cohorts."
                 stats={[
                   "30 teams supported",
@@ -113,6 +114,7 @@ export default function Home() {
               <ProjectCard 
                 title="Driven"
                 location="Los Angeles, USA"
+                href="https://getdriven.co"
                 description="Driven is a social streaming platform for the 67m car fans worldwide. Hired team, app in beta, $1m in funding closed, 100 hours of launch content acquired. Public launch Q2 2026"
                 stats={[
                   "App in beta",
@@ -123,6 +125,7 @@ export default function Home() {
               <ProjectCard 
                 title="TrimTabs"
                 location="Swansea, UK"
+                href="https://trimtabs.co"
                 description="TrimTabs makes Carbon Nanotubes, a super material driving exponential advances in computing and energy, from waste plastic."
                 stats={[
                   "$15m raised",
@@ -238,7 +241,7 @@ export default function Home() {
                   <img 
                     src={profileImg} 
                     alt="Will Mercer" 
-                    className="object-cover w-full h-full opacity-80"
+                    className="object-cover w-full h-full opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
                 </div>
