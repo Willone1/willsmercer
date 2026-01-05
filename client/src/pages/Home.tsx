@@ -339,14 +339,14 @@ export default function Home() {
 
         <ExpandableSection title="Other Interests & Requests for Collaboration" subtitle="Passion Projects & Community" defaultOpen={false}>
           <div className="py-8">
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-4xl">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-4xl text-left">
               <div className="space-y-8 text-lg md:text-xl text-white/80 leading-relaxed font-light">
                 <p>
                   I spend my spare time working on passion projects. Reach out if you want to collab on any of the below;
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 pt-8 border-t border-white/5">
                   <div className="space-y-3">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center justify-start gap-3">
                       <h3 className="text-white font-display">BringDem</h3>
                       <a href="https://bringdem.co" target="_blank" rel="noopener noreferrer" className="text-sm text-white/40 hover:text-white transition-colors">bringdem.co</a>
                     </div>
