@@ -1,33 +1,81 @@
 import { Section } from "@/components/ui/section";
 import { ProjectCard } from "@/components/ui/project-card";
 import { ExpandableSection } from "@/components/ui/expandable-section";
-import { ArrowDown, Instagram, Linkedin, Twitter, Mail } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowDown, Instagram, Linkedin, Twitter, Mail, Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import profileImg from "@assets/IMG_0283_1767509196887.jpeg";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollToContent = () => {
     const element = document.getElementById("work");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const navLinks = [
+    { href: "#work", label: "Work" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" }
+  ];
+
   return (
     <div className="min-h-screen bg-background text-foreground bg-noise selection:bg-white/20">
       {/* Navigation / Header */}
-      <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 py-6 md:px-12 flex justify-between items-center">
-        <div className="text-4xl font-display font-bold tracking-widest uppercase">
+      <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 py-8 md:px-12 flex justify-between items-center">
+        <div className="text-4xl md:text-5xl font-display font-bold tracking-widest uppercase">
           Will Mercer
         </div>
-        <nav className="flex gap-6 text-sm font-medium">
-          <a href="#work" className="hover:text-white/60 transition-colors">Work</a>
-          <a href="#about" className="hover:text-white/60 transition-colors">About</a>
-          <a href="#contact" className="hover:text-white/60 transition-colors">Contact</a>
+        
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex gap-8 text-sm font-medium">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="hover:text-white/60 transition-colors uppercase tracking-widest">{link.label}</a>
+          ))}
         </nav>
+
+        {/* Mobile Nav Button */}
+        <button 
+          className="md:hidden p-2 text-white"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
+        </button>
       </header>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-[60] bg-black flex flex-col items-center justify-center gap-8 p-6"
+          >
+            <button 
+              className="absolute top-8 right-6 p-2 text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <X size={40} />
+            </button>
+            {navLinks.map((link) => (
+              <a 
+                key={link.href} 
+                href={link.href} 
+                className="text-4xl font-display font-bold uppercase tracking-widest hover:text-white/60 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Hero Section */}
       <main className="px-6 md:px-12 max-w-7xl mx-auto">
-        <section className="min-h-[85vh] flex flex-col justify-center pt-28 relative">
+        <section className="min-h-[90vh] flex flex-col justify-center pt-48 relative">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
