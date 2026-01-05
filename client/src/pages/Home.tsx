@@ -287,13 +287,13 @@ export default function Home() {
                 <a href="mailto:will@willsmercer.com" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
                   <Mail className="w-5 h-5" />
                 </a>
-                <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
+                <a href="https://linkedin.com/in/willsmercer" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
+                <a href="https://x.com/willsmercer" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
+                <a href="https://instagram.com/willsmercer" target="_blank" rel="noopener noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-white hover:text-black transition-all">
                   <Instagram className="w-5 h-5" />
                 </a>
               </div>
