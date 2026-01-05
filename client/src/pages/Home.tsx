@@ -1,15 +1,24 @@
 import { Section } from "@/components/ui/section";
 import { ProjectCard } from "@/components/ui/project-card";
 import { ExpandableSection } from "@/components/ui/expandable-section";
-import { ArrowDown, Instagram, Linkedin, Twitter, Mail } from "lucide-react";
-import { motion } from "framer-motion";
+import { ArrowDown, Instagram, Linkedin, Twitter, Mail, Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import profileImg from "@assets/IMG_0283_1767509196887.jpeg";
 
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToContent = () => {
     const element = document.getElementById("work");
     element?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const navLinks = [
+    { href: "#work", label: "Work" },
+    { href: "#about", label: "About" },
+    { href: "#contact", label: "Contact" },
+  ];
 
   return (
     <div className="min-h-screen bg-background text-foreground bg-noise selection:bg-white/20">
@@ -18,12 +27,68 @@ export default function Home() {
         <div className="text-sm font-display font-bold tracking-widest uppercase">
           Will Mercer
         </div>
-        <nav className="flex gap-6 text-sm font-medium">
-          <a href="#work" className="hover:text-white/60 transition-colors">Work</a>
-          <a href="#about" className="hover:text-white/60 transition-colors">About</a>
-          <a href="#contact" className="hover:text-white/60 transition-colors">Contact</a>
+        
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex gap-6 text-sm font-medium">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="hover:text-white/60 transition-colors">
+              {link.label}
+            </a>
+          ))}
         </nav>
+
+        {/* Mobile Nav Button */}
+        <button 
+          className="md:hidden p-2 text-white"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </header>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-[60] bg-background/95 backdrop-blur-xl md:hidden flex flex-col items-center justify-center gap-12"
+          >
+            <button 
+              className="absolute top-6 right-6 p-2 text-white"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <X size={32} />
+            </button>
+            <nav className="flex flex-col items-center gap-8">
+              {navLinks.map((link) => (
+                <a 
+                  key={link.href} 
+                  href={link.href} 
+                  className="text-3xl font-display font-light hover:text-white/60 transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+            <div className="flex gap-6 pt-12 border-t border-white/10 w-48 justify-center">
+              <a href="https://linkedin.com/in/willsmercer" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                <Linkedin size={20} />
+              </a>
+              <a href="https://x.com/willsmercer" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                <Twitter size={20} />
+              </a>
+              <a href="https://instagram.com/willsmercer" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
+                <Instagram size={20} />
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Hero Section */}
       <main className="px-6 md:px-12 max-w-7xl mx-auto">
