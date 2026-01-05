@@ -35,24 +35,27 @@ export default function Home() {
             className="max-w-4xl"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light leading-[1.1] mb-8 text-balance">
-              Will is an early-stage venture strategist who partners with elite founders to build companies with global scale and impact.
+              Will is a venture strategist who partners with elite founders to build companies with global scale and impact.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12">
               In the past 24 months startups he’s worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
             </p>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-8 border-t border-white/10">
-              {[
-                { label: "Web3", desc: "Digital Networks" },
-                { label: "Place", desc: "Physical Spaces" },
-                { label: "Creative", desc: "Collaborative Practices" },
-                { label: "Social Impact", desc: "Equitable Society" }
-              ].map((item, i) => (
-                <div key={i}>
-                  <div className="text-white font-display mb-1">{item.label}</div>
-                  <div className="text-sm text-white/40">{item.desc}</div>
-                </div>
-              ))}
+            <div className="pt-8 border-t border-white/10">
+              <h3 className="text-xs font-mono text-white/30 uppercase tracking-[0.2em] mb-6">I work across the following thematics</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                {[
+                  { label: "Web3", desc: "Digital Networks" },
+                  { label: "Place", desc: "Physical Spaces" },
+                  { label: "Creative", desc: "Collaborative Practices" },
+                  { label: "Social Impact", desc: "Equitable Society" }
+                ].map((item, i) => (
+                  <div key={i}>
+                    <div className="text-white font-display mb-1">{item.label}</div>
+                    <div className="text-sm text-white/40">{item.desc}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </motion.div>
 
