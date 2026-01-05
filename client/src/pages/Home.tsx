@@ -41,9 +41,9 @@ export default function Home() {
               In the past 24 months startups I've worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
             </p>
 
-            <div className="pt-12 border-t border-white/10">
+            <div className="py-12 border-t border-white/10">
               <h3 className="text-sm font-mono text-white/30 uppercase tracking-[0.2em] mb-8">I work across the following thematics</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 mb-12">
                 {[
                   { label: "Web3", desc: "Digital Networks" },
                   { label: "Place", desc: "Physical Spaces" },
