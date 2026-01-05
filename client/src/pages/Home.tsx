@@ -172,7 +172,7 @@ export default function Home() {
               location="Belize → Global"
               href="https://noma-collective.com"
               description="Founded a digital nomad and co-living platform starting from a beachfront co-living space in Belize. Success stats: Scaled into the world’s largest global digital nomad travel company, with revenues doubling annually and operations across 30+ cities worldwide."
-              stats={["World's largest nomad travel co", "30+ cities"]}
+              stats={["World's largest nomad travel co", "30+ cities", ">2k customers"]}
             />
             <ProjectCard 
               title="Zag"
