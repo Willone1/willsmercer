@@ -64,7 +64,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
             onClick={scrollToContent}
-            className="absolute bottom-12 left-0 animate-bounce cursor-pointer p-2 hover:bg-white/5 rounded-full transition-colors"
+            className="absolute bottom-12 right-0 animate-bounce cursor-pointer p-2 hover:bg-white/5 rounded-full transition-colors"
           >
             <ArrowDown className="w-6 h-6 text-white/50" />
           </motion.button>
