@@ -350,7 +350,9 @@ export default function Home() {
                       <h3 className="text-white font-display text-lg">BringDem</h3>
                       <a href="https://bringdem.co" target="_blank" rel="noopener noreferrer" className="text-sm text-white/40 hover:text-white transition-colors">bringdem.co</a>
                     </div>
-                    <p className="text-base text-white/60 text-left leading-relaxed">I love to play music and host a regular show on Radio Al Hara.</p>
+                    <p className="text-base text-white/60 text-left leading-relaxed">
+                      I love to play music; playing the occasional DJ set. I host a regular show on Radio Al Hara, you can find them on <a href="https://soundcloud.com/bring_dem" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">soundcloud</a>.
+                    </p>
                   </div>
 
                   <div className="space-y-3 text-left">
