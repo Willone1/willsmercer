@@ -41,9 +41,9 @@ export default function Home() {
               In the past 24 months startups I've worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
             </p>
 
-            <div className="pt-8 border-t border-white/10">
-              <h3 className="text-xs font-mono text-white/30 uppercase tracking-[0.2em] mb-6">I work across the following thematics</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <div className="pt-12 border-t border-white/10">
+              <h3 className="text-sm font-mono text-white/30 uppercase tracking-[0.2em] mb-8">I work across the following thematics</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
                 {[
                   { label: "Web3", desc: "Digital Networks" },
                   { label: "Place", desc: "Physical Spaces" },
@@ -51,8 +51,8 @@ export default function Home() {
                   { label: "Social Impact", desc: "Equitable Society" }
                 ].map((item, i) => (
                   <div key={i}>
-                    <div className="text-white font-display mb-1">{item.label}</div>
-                    <div className="text-sm text-white/40">{item.desc}</div>
+                    <div className="text-2xl md:text-3xl font-display mb-2">{item.label}</div>
+                    <div className="text-base md:text-lg text-white/40">{item.desc}</div>
                   </div>
                 ))}
               </div>
