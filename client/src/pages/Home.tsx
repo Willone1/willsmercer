@@ -103,7 +103,7 @@ export default function Home() {
               Will is an early-stage <span className="text-white/50">venture strategist</span> who partners with <span className="text-white/50">elite founders</span> to build companies with <span className="text-white/50">global</span> scale and <span className="text-white/50">impact</span>.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12">
-              In the past 24 months, startups he’s worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
+              In the past 24 months, startups he’s worked with have raised over $30m in funding and have scaled their revenue to &gt;$10m.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-8 border-t border-white/10">
