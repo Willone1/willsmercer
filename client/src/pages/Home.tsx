@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <div className="md:col-span-8 space-y-12">
               <p className="text-2xl md:text-3xl font-display font-light leading-snug text-white/90">
-                Will spends his time making <span className="text-white">perfect physical and digital environments</span> that help people connect with their purpose and flourish.
+                Will spends his time making <span className="text-white">inspirational physical and digital environments</span> that help founders connect with their purpose and flourish.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8 border-t border-white/5">
