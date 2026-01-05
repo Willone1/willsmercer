@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground bg-noise selection:bg-white/20">
       {/* Navigation / Header */}
       <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 py-6 md:px-12 flex justify-between items-center">
-        <div className="text-sm font-display font-bold tracking-widest uppercase">
+        <div className="text-xl font-display font-bold tracking-widest uppercase">
           Will Mercer
         </div>
         <nav className="flex gap-6 text-sm font-medium">
