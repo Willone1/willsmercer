@@ -342,9 +342,9 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-4xl text-left px-0">
               <div className="space-y-8 text-lg md:text-xl text-white/80 leading-relaxed font-light w-full">
                 <p className="text-left w-full">
-                  I spend my spare time working on passion projects. Reach out if you want to collab on any of the below;
+                  I spend my spare time working on passion projects. Reach out if you want to collab on any of the below:
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 pt-8 border-t border-white/5 w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 pt-8 w-full">
                   <div className="space-y-3 text-left">
                     <div className="flex items-center justify-start gap-3">
                       <h3 className="text-white font-display text-lg">BringDem</h3>
