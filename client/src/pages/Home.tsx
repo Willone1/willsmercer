@@ -35,10 +35,10 @@ export default function Home() {
             className="max-w-4xl"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light leading-[1.1] mb-8 text-balance">
-              Will is a venture strategist who partners with elite founders to build companies with global scale and impact.
+              I am a venture strategist who partners with elite founders to build companies with global scale and impact.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12">
-              In the past 24 months startups he’s worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
+              In the past 24 months startups I've worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
             </p>
 
             <div className="pt-8 border-t border-white/10">
