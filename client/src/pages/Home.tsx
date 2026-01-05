@@ -1,81 +1,33 @@
 import { Section } from "@/components/ui/section";
 import { ProjectCard } from "@/components/ui/project-card";
 import { ExpandableSection } from "@/components/ui/expandable-section";
-import { ArrowDown, Instagram, Linkedin, Twitter, Mail, Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { ArrowDown, Instagram, Linkedin, Twitter, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 import profileImg from "@assets/IMG_0283_1767509196887.jpeg";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollToContent = () => {
     const element = document.getElementById("work");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const navLinks = [
-    { href: "#work", label: "Work" },
-    { href: "#about", label: "About" },
-    { href: "#contact", label: "Contact" }
-  ];
-
   return (
     <div className="min-h-screen bg-background text-foreground bg-noise selection:bg-white/20">
       {/* Navigation / Header */}
-      <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 py-8 md:px-12 flex justify-between items-center">
-        <div className="text-4xl md:text-5xl font-display font-bold tracking-widest uppercase">
+      <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference px-6 py-6 md:px-12 flex justify-between items-center">
+        <div className="text-sm font-display font-bold tracking-widest uppercase">
           Will Mercer
         </div>
-        
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8 text-sm font-medium">
-          {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-white/60 transition-colors uppercase tracking-widest">{link.label}</a>
-          ))}
+        <nav className="flex gap-6 text-sm font-medium">
+          <a href="#work" className="hover:text-white/60 transition-colors">Work</a>
+          <a href="#about" className="hover:text-white/60 transition-colors">About</a>
+          <a href="#contact" className="hover:text-white/60 transition-colors">Contact</a>
         </nav>
-
-        {/* Mobile Nav Button */}
-        <button 
-          className="md:hidden p-2 text-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
-        </button>
       </header>
-
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {isMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[60] bg-black flex flex-col items-center justify-center gap-8 p-6"
-          >
-            <button 
-              className="absolute top-8 right-6 p-2 text-white"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <X size={40} />
-            </button>
-            {navLinks.map((link) => (
-              <a 
-                key={link.href} 
-                href={link.href} 
-                className="text-4xl font-display font-bold uppercase tracking-widest hover:text-white/60 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Hero Section */}
       <main className="px-6 md:px-12 max-w-7xl mx-auto">
-        <section className="min-h-[90vh] flex flex-col justify-center pt-48 relative">
+        <section className="min-h-screen flex flex-col justify-center pt-20 relative">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -83,27 +35,24 @@ export default function Home() {
             className="max-w-4xl"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light leading-[1.1] mb-8 text-balance">
-              I am a venture strategist who partners with elite founders to build companies with global scale and impact.
+              Will is an early-stage venture strategist who partners with elite founders to build companies with global scale and impact.
             </h1>
-            <p className="text-2xl md:text-3xl font-display font-light leading-snug text-white/60 mb-12 max-w-4xl">
-              In the past 24 months startups I've worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
+            <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12">
+              In the past 24 months startups he’s worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
             </p>
 
-            <div className="py-12 border-t border-white/10">
-              <h3 className="text-sm font-mono text-white/30 uppercase tracking-[0.2em] mb-8">I work across the following thematics</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 mb-12">
-                {[
-                  { label: "Web3", desc: "Digital Networks" },
-                  { label: "Place", desc: "Physical Spaces" },
-                  { label: "Creative", desc: "Collaborative Practices" },
-                  { label: "Social Impact", desc: "Equitable Society" }
-                ].map((item, i) => (
-                  <div key={i}>
-                    <div className="text-2xl md:text-3xl font-display mb-2">{item.label}</div>
-                    <div className="text-base md:text-lg text-white/40">{item.desc}</div>
-                  </div>
-                ))}
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 pt-8 border-t border-white/10">
+              {[
+                { label: "Web3", desc: "Digital Networks" },
+                { label: "Place", desc: "Physical Spaces" },
+                { label: "Creative", desc: "Collaborative Practices" },
+                { label: "Social Impact", desc: "Equitable Society" }
+              ].map((item, i) => (
+                <div key={i}>
+                  <div className="text-white font-display mb-1">{item.label}</div>
+                  <div className="text-sm text-white/40">{item.desc}</div>
+                </div>
+              ))}
             </div>
           </motion.div>
 
@@ -112,7 +61,7 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
             onClick={scrollToContent}
-            className="absolute bottom-12 right-0 animate-bounce cursor-pointer p-2 hover:bg-white/5 rounded-full transition-colors"
+            className="absolute bottom-12 left-0 animate-bounce cursor-pointer p-2 hover:bg-white/5 rounded-full transition-colors"
           >
             <ArrowDown className="w-6 h-6 text-white/50" />
           </motion.button>
