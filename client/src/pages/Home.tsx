@@ -100,7 +100,7 @@ export default function Home() {
             className="max-w-4xl"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-light leading-[1.1] mb-8 text-balance">
-              Will is an early-stage venture strategist who partners with elite founders to build companies with global scale and impact.
+              Will is an early-stage <span className="text-white/50">venture strategist</span> who partners with <span className="text-white/50">elite founders</span> to build companies with <span className="text-white/50">global</span> scale and <span className="text-white/50">impact</span>.
             </h1>
             <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12">
               In the past 24 months startups he’s worked with have raised over $30m in funding, and have scaled their revenue to &gt;$10m.
