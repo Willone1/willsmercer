@@ -339,36 +339,36 @@ export default function Home() {
 
         <ExpandableSection title="Other Interests & Requests for Collaboration" subtitle="Passion Projects & Community" defaultOpen={false}>
           <div className="py-8">
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-4xl text-left">
-              <div className="space-y-8 text-lg md:text-xl text-white/80 leading-relaxed font-light">
-                <p>
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-4xl text-left px-0">
+              <div className="space-y-8 text-lg md:text-xl text-white/80 leading-relaxed font-light w-full">
+                <p className="text-left w-full">
                   I spend my spare time working on passion projects. Reach out if you want to collab on any of the below;
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 pt-8 border-t border-white/5">
-                  <div className="space-y-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 pt-8 border-t border-white/5 w-full">
+                  <div className="space-y-3 text-left">
                     <div className="flex items-center justify-start gap-3">
                       <h3 className="text-white font-display">BringDem</h3>
                       <a href="https://bringdem.co" target="_blank" rel="noopener noreferrer" className="text-sm text-white/40 hover:text-white transition-colors">bringdem.co</a>
                     </div>
-                    <p className="text-base text-white/60">I love to play music and host a regular show on Radio Al Hara.</p>
+                    <p className="text-base text-white/60 text-left">I love to play music and host a regular show on Radio Al Hara.</p>
                   </div>
-                  
-                  <div className="space-y-3">
+
+                  <div className="space-y-3 text-left">
                     <h3 className="text-white font-display">Talks & Lectures</h3>
-                    <p className="text-base text-white/60">I give talks and lectures on startup finance and business strategy for undergrad to MBA students at universities such as ESCP (France), Kharkiv (Ukraine), Monterrey (Mexico) & Swansea (UK).</p>
+                    <p className="text-base text-white/60 text-left">I give talks and lectures on startup finance and business strategy for undergrad to MBA students at universities such as ESCP (France), Kharkiv (Ukraine), Monterrey (Mexico) & Swansea (UK).</p>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-3 text-left">
                     <h3 className="text-white font-display">Beach Volleyball</h3>
-                    <p className="text-base text-white/60">I host a meetup group that plays in Mexico City every Saturday, reach out if you play and are passing through.</p>
+                    <p className="text-base text-white/60 text-left">I host a meetup group that plays in Mexico City every Saturday, reach out if you play and are passing through.</p>
                   </div>
 
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
+                  <div className="space-y-3 text-left">
+                    <div className="flex items-center justify-start gap-3">
                       <h3 className="text-white font-display">Founder Retreats</h3>
                       <a href="https://FindMusa.mx" target="_blank" rel="noopener noreferrer" className="text-sm text-white/40 hover:text-white transition-colors">FindMusa.mx</a>
                     </div>
-                    <p className="text-base text-white/60">I host founder retreats at MUSA, a stunning 300 acre beachfront resort on Mexico's Pacific coast.</p>
+                    <p className="text-base text-white/60 text-left">I host founder retreats at MUSA, a stunning 300 acre beachfront resort on Mexico's Pacific coast.</p>
                   </div>
                 </div>
               </div>
