@@ -272,6 +272,45 @@ export default function Home() {
           </ExpandableSection>
         </div>
 
+        <ExpandableSection title="Other Interests & Requests for Collaboration" subtitle="Passion Projects & Community" defaultOpen={false}>
+          <div className="py-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-12 max-w-4xl">
+              <div className="space-y-8 text-lg md:text-xl text-white/80 leading-relaxed font-light">
+                <p>
+                  I spend my spare time working on passion projects. Reach out if you want to collab on any of the below;
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 pt-8 border-t border-white/5">
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <h3 className="text-white font-display">BringDem</h3>
+                      <a href="https://bringdem.co" target="_blank" rel="noopener noreferrer" className="text-sm text-white/40 hover:text-white transition-colors">bringdem.co</a>
+                    </div>
+                    <p className="text-base text-white/60">I love to play music and host a regular show on Radio Al Hara.</p>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h3 className="text-white font-display">Talks & Lectures</h3>
+                    <p className="text-base text-white/60">I give talks and lectures on startup finance and business strategy for undergrad to MBA students at universities such as ESCP (France), Kharkiv (Ukraine), Monterrey (Mexico) & Swansea (UK).</p>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h3 className="text-white font-display">Beach Volleyball</h3>
+                    <p className="text-base text-white/60">I host a meetup group that plays in Mexico City every Saturday, reach out if you play and are passing through.</p>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                      <h3 className="text-white font-display">Founder Retreats</h3>
+                      <a href="https://FindMusa.mx" target="_blank" rel="noopener noreferrer" className="text-sm text-white/40 hover:text-white transition-colors">FindMusa.mx</a>
+                    </div>
+                    <p className="text-base text-white/60">I host founder retreats at MUSA, a stunning 300 acre beachfront resort on Mexico's Pacific coast.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ExpandableSection>
+
         {/* Footer / Contact */}
         <footer id="contact" className="py-24 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
