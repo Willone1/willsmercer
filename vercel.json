@@ -1,7 +1,18 @@
 {
   "version": 2,
   "redirects": [
-    { "source": "/about-me", "destination": "/", "permanent": true }
+    { "source": "/about-me", "destination": "/", "permanent": true },
+    { "source": "/about", "destination": "/", "permanent": true },
+    { "source": "/contact", "destination": "/#contact", "permanent": true },
+    { "source": "/work", "destination": "/#work", "permanent": true },
+    { "source": "/projects", "destination": "/#work", "permanent": true },
+    { "source": "/portfolio", "destination": "/#work", "permanent": true },
+    { "source": "/bio", "destination": "/#about", "permanent": true },
+    { "source": "/biography", "destination": "/#about", "permanent": true },
+    { "source": "/blog/:path*", "destination": "/", "permanent": true },
+    { "source": "/news/:path*", "destination": "/", "permanent": true },
+    { "source": "/page/:path*", "destination": "/", "permanent": true },
+    { "source": "/:path((?!assets|index\\.html|favicon|.*\\.[a-z]+$).*)", "destination": "/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
