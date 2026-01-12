@@ -1,20 +1,21 @@
 {
   "version": 2,
+  "trailingSlash": false,
   "redirects": [
-    { "source": "/about-me", "destination": "/", "permanent": true },
-    { "source": "/about", "destination": "/", "permanent": true },
-    { "source": "/contact", "destination": "/#contact", "permanent": true },
-    { "source": "/work", "destination": "/#work", "permanent": true },
-    { "source": "/projects", "destination": "/#work", "permanent": true },
-    { "source": "/portfolio", "destination": "/#work", "permanent": true },
-    { "source": "/bio", "destination": "/#about", "permanent": true },
-    { "source": "/biography", "destination": "/#about", "permanent": true },
-    { "source": "/blog/:path*", "destination": "/", "permanent": true },
-    { "source": "/news/:path*", "destination": "/", "permanent": true },
-    { "source": "/page/:path*", "destination": "/", "permanent": true },
-    { "source": "/:path((?!assets|index\\.html|favicon|.*\\.[a-z]+$).*)", "destination": "/", "permanent": true }
+    { "source": "/about-me", "destination": "/", "statusCode": 301 },
+    { "source": "/about", "destination": "/", "statusCode": 301 },
+    { "source": "/contact", "destination": "/", "statusCode": 301 },
+    { "source": "/work", "destination": "/", "statusCode": 301 },
+    { "source": "/projects", "destination": "/", "statusCode": 301 },
+    { "source": "/portfolio", "destination": "/", "statusCode": 301 },
+    { "source": "/bio", "destination": "/", "statusCode": 301 },
+    { "source": "/biography", "destination": "/", "statusCode": 301 },
+    { "source": "/blog/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/news/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/page/:path*", "destination": "/", "statusCode": 301 },
+    { "source": "/:path*", "destination": "/", "statusCode": 301 }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/", "destination": "/index.html" }
   ]
 }
