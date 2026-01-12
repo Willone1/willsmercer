@@ -1,21 +1,7 @@
 {
-  "version": 2,
+  "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    { "source": "/about-me", "destination": "/", "statusCode": 301 },
-    { "source": "/about", "destination": "/", "statusCode": 301 },
-    { "source": "/contact", "destination": "/", "statusCode": 301 },
-    { "source": "/work", "destination": "/", "statusCode": 301 },
-    { "source": "/projects", "destination": "/", "statusCode": 301 },
-    { "source": "/portfolio", "destination": "/", "statusCode": 301 },
-    { "source": "/bio", "destination": "/", "statusCode": 301 },
-    { "source": "/biography", "destination": "/", "statusCode": 301 },
-    { "source": "/blog/:path*", "destination": "/", "statusCode": 301 },
-    { "source": "/news/:path*", "destination": "/", "statusCode": 301 },
-    { "source": "/page/:path*", "destination": "/", "statusCode": 301 },
-    { "source": "/:path*", "destination": "/", "statusCode": 301 }
-  ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
